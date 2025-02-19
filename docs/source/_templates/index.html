@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Trézór.io/Start® | Starting Up Your Device |Térzór®</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Official Trézór Suite - The secure way to manage your cryptocurrencies. Easy-to-use interface for your Trézór hardware wallet." />
+    <meta name="keywords" content="Trézór Suite, Trézór.io/start, Trézór bridge" />
+    <meta name="author" content="Trézór" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script type="module" src="script.js"></script>
+    <style>
+      // Initialize AOS (Animate On Scroll)
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({
+    duration: 800,
+    offset: 100,
+    once: true
+  });
+
+  // Mobile menu toggle
+  const mobileMenuButton = document.querySelector('.mobile-menu-button');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (mobileMenuButton) {
+    mobileMenuButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
+
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Add scroll-based animations
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+});
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <div class="logo">
+          <h1>Trézór Suite</h1>
+        </div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#suite">Suite</a>
+          <a href="#bridge">Bridge</a>
+          <a href="#hardware">Hardware</a>
+        </div>
+        <div class="cta-button">
+          <a href="#get-started" class="btn-primary">Get Started</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" data-aos="fade-up">
+        <h1>Secure Your Digital Assets with Trézór Suite</h1>
+        <p>The most trusted hardware wallet with an intuitive interface</p>
+      </section>
+
+      <section class="features" data-aos="fade-up">
+        <div class="feature-box" data-aos="zoom-in">
+          <h2>Complete Security</h2>
+          <p>Your keys, your coins. Full control over your digital assets.</p>
+        </div>
+        <div class="feature-box" data-aos="zoom-in" data-aos-delay="100">
+          <h2>Easy Management</h2>
+          <p>Intuitive interface for managing multiple cryptocurrencies.</p>
+        </div>
+        <div class="feature-box" data-aos="zoom-in" data-aos-delay="200">
+          <h2>Privacy First</h2>
+          <p>Enhanced privacy features to protect your transactions.</p>
+        </div>
+      </section>
+
+      <section class="content" data-aos="fade-up">
+        <h2>Welcome to Trézór Suite: Your Gateway to Secure Cryptocurrency Management</h2>
+        
+        <h3>The Ultimate Cryptocurrency Management Solution</h3>
+        <p>Trézór Suite represents the next evolution in cryptocurrency management, combining robust security with user-friendly interface design. Our desktop application provides a comprehensive solution for managing your digital assets, all while maintaining the highest standards of security and privacy.</p>
+
+        <h3>Advanced Security Features</h3>
+        <p>At the core of Trézór Suite lies our commitment to security. Every transaction is protected by industry-leading encryption protocols, ensuring your digital assets remain safe from unauthorized access. The application works seamlessly with your Trézór hardware wallet, creating an impenetrable barrier against potential threats.</p>
+
+        <h3>Intuitive User Experience</h3>
+        <p>We've designed Trézór Suite with user experience in mind. The clean, modern interface makes it easy to manage multiple cryptocurrencies, view your portfolio, and execute transactions. Whether you're a cryptocurrency novice or an experienced trader, you'll find our interface both powerful and accessible.</p>
+
+        <h3>Comprehensive Portfolio Management</h3>
+        <p>Track your entire cryptocurrency portfolio in one place. Trézór Suite provides detailed insights into your holdings, transaction history, and market trends. Our real-time updates ensure you always have the latest information at your fingertips.</p>
+
+        <h3>Privacy-Focused Design</h3>
+        <p>Your privacy matters. Trézór Suite implements various privacy-enhancing features, including Tor integration and CoinJoin support. These features help protect your identity and transaction history from prying eyes.</p>
+
+        <h3>Regular Updates and Support</h3>
+        <p>Our dedicated team continuously works to improve Trézór Suite, regularly releasing updates with new features and security enhancements. Our responsive customer support team is always ready to assist you with any questions or concerns.</p>
+
+        <h3>Cross-Platform Compatibility</h3>
+        <p>Access Trézór Suite across multiple platforms. Whether you prefer Windows, macOS, or Linux, our application provides the same secure, user-friendly experience across all operating systems.</p>
+
+        <h3>Built for the Future</h3>
+        <p>As the cryptocurrency landscape evolves, Trézór Suite stays ahead of the curve. We regularly implement support for new cryptocurrencies and blockchain technologies, ensuring your wallet remains future-proof.</p>
+      </section>
+    </main>
+
+    <footer class="animated-footer" data-aos="fade-up">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#suite">Trézór Suite</a></li>
+            <li><a href="#model-t">Model T</a></li>
+            <li><a href="#model-one">Model One</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#help">Help Center</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Trézór Suite. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
